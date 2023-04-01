@@ -1,6 +1,5 @@
 #Write your code below this line 👇
 
-
 def prime_checker(number):
     isPrime = True
     for n in range(1,number ):
@@ -9,21 +8,10 @@ def prime_checker(number):
             print(n)
             if modulus == 0:
                 isPrime = False
-                
-
     if not isPrime:
         print(f'{number} is not Prime')
     else:
         print(f'{number} is Prime') 
-             
-    
-
-
-
-
-            
-    
-
 
 #Write your code above this line 👆
     
