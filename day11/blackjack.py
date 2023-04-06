@@ -34,17 +34,72 @@ while game_over == False:
     def check_who_win():
         if computer_blackjack == True:
             game_over = True
-        if user_blackjack == True:
+            print("You lose")
+        if user_blackjack == True and computer_blackjack == False:
             print("You Win")
 
+    def calculate_score(user):
+        score = sum(user)
+        if score > 21 and 11 in user:
+            score = sum(user) - 10
+        return score
+    
+    def compare(user_score, computer_score):
+        if user_score == computer_score:
+            return "Draw"
+        elif computer_score == 21:
+            return "Lose"
+        elif user_score == 21:
+            return "win with a blackjacj"
+        elif user_score > 21:
+            return "Opponent went over, you win"
+        elif user_score > computer_score:
+            return  "You win"
+        else:
+            return "You lose"
+    
+# starting game
     computer_cards = [deal_card(), deal_card()]
     my_cards = [deal_card(), deal_card()]
 
+    print(f"First card of computer is ${computer_cards[0]}")
+    print(f"your cards are ${my_cards[0]} and ${my_cards[1]}")
+    my_score = calculate_score(my_cards)
+    computer_score = calculate_score(computer_cards)
+
     computer_blackjack = False
     user_blackjack = False
-
-    if computer_cards[0] + computer_cards[1] == 21:
+    
+    if computer_score == 21:
         computer_blackjack = True
+    if my_score == 21:
+        user_blackjack = True
+        print("Blackjack! you win!")
+        break
+
+
+    get_another_card = input("Do you want to get another card? y or n ")  
+    if get_another_card == "n":
+        game_over = True 
+        if my_score > computer_score:
+            print("you win!")
+            break
+        if my_score < computer_score:
+            print("you lose")
+            break
+    if get_another_card == "y":
+        my_cards.append(deal_card())
+        print(f"your cards are ${my_cards}")
+
+    while computer_score != 0 and computer_score < 17:
+        computer_cards.append(deal_card())
+        computer_score = calculate_score(computer_cards)
+
+    compare(my_score, computer_score)
+
+    
+
+    
 
     
 
