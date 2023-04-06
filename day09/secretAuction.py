@@ -1,7 +1,7 @@
 
 # you can call clear() to clear the output in the console
 
-from art import logo
+from day10.art import logo
 
 
 at_loop = True
