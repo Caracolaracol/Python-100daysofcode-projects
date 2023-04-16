@@ -1,9 +1,7 @@
 import random
 from data import data
 
-
 def start_game():
-
     def print_game():
         print("##########################  Higher Lower Game #########################")
         print("Welcome to HigherLower Game!")
@@ -33,7 +31,6 @@ def start_game():
 
     print_game()
 
-
     user_answer = input("Who has more followers? Type 'A' or 'B':").lower()
     if user_answer == 'a':
         if count_first_item >= count_second_item:
@@ -50,7 +47,5 @@ def start_game():
     play_again = input("Do you want to play again? Type 'Y' or 'N'").lower()
     if play_again == 'y':
         start_game()
-
-
-
+        
 start_game()
