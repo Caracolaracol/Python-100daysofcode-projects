@@ -1,14 +1,2 @@
 question_data = [
-    {"text": "A slug's blood is green.", "answer": "True"},
-    {"text": "The loudest animal is the African Elephant.", "answer": "False"},
-    {"text": "Approximately one quarter of human bones are in the feet.", "answer": "True"},
-    {"text": "The total surface area of a human lungs is the size of a football pitch.", "answer": "True"},
-    {"text": "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.", "answer": "True"},
-    {"text": "In London, UK, if you happen to die in the House of Parliament, you are entitled to a state funeral.", "answer": "False"},
-    {"text": "It is illegal to pee in the Ocean in Portugal.", "answer": "True"},
-    {"text": "You can lead a cow down stairs but not up stairs.", "answer": "False"},
-    {"text": "Google was originally called 'Backrub'.", "answer": "True"},
-    {"text": "Buzz Aldrin's mother's maiden name was 'Moon'.", "answer": "True"},
-    {"text": "No piece of square dry paper can be folded in half more than 7 times.", "answer": "False"},
-    {"text": "A few ounces of chocolate can to kill a small dog.", "answer": "True"}
-]
+    {"category":"Science & Nature","type":"boolean","difficulty":"medium","question":"The Neanderthals were a direct ancestor of modern humans.","correct_answer":"False","incorrect_answers":["True"]},{"category":"Mythology","type":"boolean","difficulty":"easy","question":"In Norse mythology, Thor once dressed as a woman.","correct_answer":"True","incorrect_answers":["False"]},{"category":"History","type":"boolean","difficulty":"medium","question":"&quot;I disapprove of what you say, but I will defend to the death your right to say it&quot; is a quote from French philosopher Voltaire.","correct_answer":"False","incorrect_answers":["True"]},{"category":"Mythology","type":"boolean","difficulty":"medium","question":"The Japanese god Izanagi successfully returned his wife Izanami from the Underworld.","correct_answer":"False","incorrect_answers":["True"]},{"category":"General Knowledge","type":"boolean","difficulty":"easy","question":"Pluto is a planet.","correct_answer":"False","incorrect_answers":["True"]},{"category":"Entertainment: Film","type":"boolean","difficulty":"medium","question":"Joan Cusack starred in the 2009 disaster movie, &quot;2012&quot;.","correct_answer":"False","incorrect_answers":["True"]},{"category":"Science: Mathematics","type":"boolean","difficulty":"medium","question":"Zero factorial is equal to zero. ","correct_answer":"False","incorrect_answers":["True"]},{"category":"Geography","type":"boolean","difficulty":"medium","question":"Norway has a larger land area than Sweden.","correct_answer":"False","incorrect_answers":["True"]},{"category":"Science & Nature","type":"boolean","difficulty":"medium","question":"Pneumonoultramicroscopicsilicovolcanoconiosis is a synonym for the disease known as silicosis.","correct_answer":"True","incorrect_answers":["False"]},{"category":"Science & Nature","type":"boolean","difficulty":"medium","question":"Sound can travel through a vacuum.","correct_answer":"False","incorrect_answers":["True"]}]

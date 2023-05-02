@@ -13,8 +13,8 @@ class QuizBrain:
     def still_has_questions(self):
         return self.question_number < len(self.question_list)
     
-    def check_answer(self, user_anser, correct_answer):
-        if user_anser.lower() == correct_answer.lower():
+    def check_answer(self, user_answer, correct_answer):
+        if user_answer.lower() == correct_answer.lower():
             print("You got it right!")
             self.score += 1
             print(f"Your current score is {self.score}/{self.question_number}")
